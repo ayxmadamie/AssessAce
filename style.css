@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b3e0ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Tetap di tengah untuk halaman awal dan halaman kedua */
+    align-items: center; /* Tetap di tengah untuk halaman awal dan halaman kedua */
+    height: 100vh; /* Tinggi penuh layar */
+}
+
+.container {
+    text-align: center; /* Tetap di tengah untuk halaman awal dan halaman kedua */
+    padding: 20px;
+    border: 2px solid #0056b3;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Mengatur lebar kontainer */
+    max-width: 600px; /* Batas maksimum lebar kontainer */
+    margin: 20px; /* Margin untuk semua sisi */
+}
+
+/* Gaya khusus untuk halaman ujian */
+.exam-container {
+    display: flex; /* Menggunakan flexbox untuk mengatur posisi */
+    flex-direction: column; /* Mengatur elemen dalam kolom */
+    align-items: flex-start; /* Menempatkan elemen di pinggir kiri */
+    text-align: left; /* Mengatur teks ke kiri */
+}
+
+#options label {
+    display: block; /* Menampilkan label sebagai blok agar rapi */
+    margin: 5px 0; /* Margin atas dan bawah untuk jarak antar opsi */
+}
+
+input[type="radio"] {
+    margin-right: 10px; /* Jarak antara radio button dan teks */
+}
+
+.subtitle {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #004494;
+}
