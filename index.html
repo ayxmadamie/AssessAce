@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AssessAce</title>
+</head>
+<body>
+
+    <div class="container" id="welcome-page">
+        <img src="logo.jpg" width="50px" height="50px"/>
+        <h1>Welcome to AssessAce</h1>
+        <p class="subtitle">Do your best!</p>
+        <button onclick="goToLogin()">Login</button>
+    </div>
+
+    <div class="container" id="login-page" style="display: none;">
+        <h2>Masukkan Data Anda</h2>
+        <input type="text" id="name" placeholder="Nama" required>
+        <input type="text" id="class" placeholder="Kelas" required>
+        <input type="text" id="nisn" placeholder="NISN" required>
+        <button onclick="goToSubject()">Start Exam</button>
+    </div>
+
+    <div class="container" id="subject-page" style="display: none;">
+        <h2>Pilih Mata Pelajaran</h2>
+        <button onclick="startExam('matematika')">Matematika</button>
+        <button onclick="startExam('sosiologi')">Sosiologi</button>
+        <button onclick="startExam('sejarah')">Sejarah</button>
+    </div>
+
+    <div class="container" id="exam-page" style="display: none;">
+        <h2 id="question-number"></h2>
+        <p id="question"></p>
+        <div id="options"></div>
+        <button id="prev-button" onclick="prevQuestion()" style="display: none;">Prev</button>
+        <button id="next-button" onclick="nextQuestion()">Next</button>
+        <button id="submit-button" onclick="submitExam()" style="display: none;">Submit</button>
+    </div>
+
+    <div class="container" id="result-page" style="display: none;">
+        <h2>Hasil Ujian</h2>
+        <p id="result"></p>
+        <button onclick="restartExam()">Ulangi Ujian</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
